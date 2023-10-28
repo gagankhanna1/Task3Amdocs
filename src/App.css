@@ -1,0 +1,87 @@
+
+button {
+  margin: 10px;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+
+.step {
+  max-height: 0;
+  transition: max-height 0.5s;
+  overflow: hidden;
+}
+
+.step.current {
+  max-height: 1000px; /* Adjust this value based on your content */
+}
+.steps-indicator {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.completed-step, .current-step {
+  background-color: #e0e0e0;
+  padding: 8px;
+  margin: 4px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.current-step {
+  background-color: #609df9;
+  color: #fff;
+}
+
+/* Your existing CSS ... */
+
+
+.step-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 325px;
+  border-radius: 25px;
+  color: #609df9;
+  padding: 20px;
+  background-color: #ebe4fc;
+  border: 1px solid #d4c3fd;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.error {
+  color: red;
+}
+
+
+.error-container {
+  height: 20px; /* Set the desired height for the error message container */
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
